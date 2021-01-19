@@ -1,4 +1,5 @@
 # Bahmni QA AMI
+![Validate](https://github.com/m273d15/bahmni_qa_ami/workflows/Validate/badge.svg)
 
 The repository provides a packer template `centos_bahmni_ami.json` and corresponding
 scripts to create a bahmni QA instance that can be used in
