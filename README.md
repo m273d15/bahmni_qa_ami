@@ -13,11 +13,13 @@ The AMI contains the following software:
 
 ## Usage
 
-## Prerequisites
+### Prerequisites
 
 * Install [Packer](https://learn.hashicorp.com/tutorials/packer/getting-started-install)
 * Set the environment var `OPENMR_PWD` to the password of the mysql user `openmrs-user`.
 * Set the environment var `AWS_DEFAULT_REGION` to the desired region. Use
   `AWS_DEFAULT_REGION=ap-south-1` if you want to build the AMI in Mumbai.
 * Set your (temporary) AWS credentials and assume a role that has the [required permissions](https://www.packer.io/docs/builders/amazon#iam-task-or-instance-role).
-* Call `packer build centos_bahmni_ami.json`
+
+### Build
+* Call `packer build centos_bahmni_ami.json` to build the AMI in AWS
