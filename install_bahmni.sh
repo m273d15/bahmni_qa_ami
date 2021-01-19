@@ -1,5 +1,7 @@
 #!/bin/bash -ex
 
+# OPENMRS_PWD is set by packer
+# shellcheck disable=SC2153
 openmrs_pwd="$OPENMRS_PWD"
 # Prerequisite Click 7.0 for fresh installation of Bahmni
 function install_click {
