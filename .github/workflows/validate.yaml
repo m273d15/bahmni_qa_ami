@@ -1,0 +1,23 @@
+---
+
+name: Validate 
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Template Validation
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Validate Scripts
+        uses: ludeeus/action-shellcheck@master
+
+      - name: Validate Template
+        uses: operatehappy/packer-github-actions@master
+        with:
+          command: validate
+          target: centos_bahmni_ami.json
